@@ -17,7 +17,7 @@ if (loading) return <Loading/>
     
     <div className='bg-gray-50 w-[90%] mx-auto mt-24 mb-24 p-10'>
       <h1 className='text-4xl capitalize font-semibold'>wish List</h1>
-    {wishlist.data.length ? <>{wishlist.data?.map((product)=>  
+    {wishlist.data?.length ? <>{wishlist.data?.map((product)=>  
     <div key={product.id} className='flex items-center max-md:flex-col gap-5 pt-7 pb-2 border-b-[1px] border-gray-300'>
       <div className='w-1/6 max-md:w-[50%]'>
         <img src={product.imageCover} className='w-full' alt="" />
